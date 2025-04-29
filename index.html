@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Prototipe Fase 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #task-input {
+            flex-grow: 1;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        #add-btn {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        .placeholder-task {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    
+    <div class="input-container">
+        <input type="text" id="task-input" placeholder="Tambahkan tugas baru...">
+        <button id="add-btn">Tambah</button>
+    </div>
+    
+    <ul id="task-list">
+        <li class="placeholder-task">Contoh: Menyelesaikan laporan</li>
+        <li class="placeholder-task">Contoh: Belanja bahan makanan</li>
+        <li class="placeholder-task">Contoh: Mengerjakan tugas kuliah</li>
+    </ul>
+
+    <script>
+        // Fase 1: Prototipe hanya menampilkan UI statis
+        document.getElementById('add-btn').addEventListener('click', function() {
+            alert('Fitur ini akan aktif pada prototipe fase berikutnya!');
+        });
+    </script>
+</body>
+</html>
